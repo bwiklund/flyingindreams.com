@@ -1,15 +1,67 @@
 body
-  background: #fff
-  color: #222
+  background: #000
   box-sizing: border-box
   font-family: Helvetica, sans-serif
-  margin: 30px
-  font-size: 18px
+  font-size: 14px
   line-height: 1.35
 
 *
   margin: 0
   padding: 0
+  box-sizing: border-box
 
-h1
-  font-family: "HelveticaNeue-CondensedBold"
+
+.main
+  width: 759px
+  margin: 30px auto
+  padding: 30px
+  color: white
+  background: url(/images/bg.jpg) no-repeat top left
+
+  header
+    margin: 0 0 200px 0
+
+    h1, h2, h3
+      font-weight: 200
+      font-family: Helvetica, sans-serif
+
+    h1
+      font-size: 48px
+
+    h2,h3
+      font-size: 18px
+
+
+  .about
+
+    p
+      margin: 20px 0
+  
+    .download-section
+      margin: 30px -30px
+      padding: 10px 30px
+      background: rgba(0,0,0,0.7)
+      font-weight: 200
+
+      .download-link
+        color: white
+        background: black
+        text-decoration: none
+        display: inline-block
+        padding: 3px 8px
+        border-bottom: 3px solid #fbb55b
+        border-top: 3px solid #000
+
+        &:hover
+          color: #fbb55b
+
+
+  .thumbs
+    margin: 30px -30px
+    padding: 0 30px
+    background: rgba(0,0,0,0.7)
+
+    a
+      display: inline-block
+      line-height: 0
+      margin: 12px
