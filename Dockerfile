@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y nginx nodejs
+RUN apt-get install -y nginx nodejs curl
 
 RUN \curl -sSL https://get.rvm.io | bash -s stable
 RUN source ~/.rvm/scripts/rvm
