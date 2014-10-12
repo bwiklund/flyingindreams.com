@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install -y nginx nodejs curl
 
 RUN \curl -sSL https://get.rvm.io | bash -s stable
-RUN source ~/.rvm/scripts/rvm
+RUN source /etc/profile.d/rvm.sh
 RUN rvm install 2.1.2
 RUN gem update --system
 RUN echo "gem: --no-document" >> ~/.gemrc
