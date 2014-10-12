@@ -1,4 +1,5 @@
 FROM ubuntu:14.04
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
 RUN apt-get update
