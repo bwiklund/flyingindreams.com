@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y nginx git rubygems nodejs
+RUN apt-get install -y nginx git ruby nodejs
 
 RUN gem install bundler
 
