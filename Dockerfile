@@ -1,9 +1,6 @@
-FROM ubuntu:14.04
+FROM octohost/ruby-1.9
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get install -y nginx git ruby-dev nodejs
-RUN apt-get install -y build-essentials
+RUN gem install middleman therubyracer --no-rdoc --no-ri
 
 RUN gem install bundler
 
