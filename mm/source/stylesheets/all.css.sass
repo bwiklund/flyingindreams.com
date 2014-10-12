@@ -10,85 +10,91 @@ body
   padding: 0
   box-sizing: border-box
 
-body, html
-  height: 100%
-
 body
   background: #3a1817 url(/images/bgart.jpg) center
   background-size: cover
 
+h1, h2, h3
+  font-weight: 200
+
+h1
+  font-size: 48px
+
+h2
+  font-size: 24px
+
+h3
+  font-size: 24px
+
 .main
   background: rgba(255,255,255,0.9 )
   background-size: cover
-  width: 759px
+  width: 900px
   margin: 0 auto
-  padding: 40px 40px 1px 40px
+  padding: 60px
   height: 100%
   color: #333
 
   header
     margin: 0 0 40px 0
 
-    h1, h2, h3
-      font-weight: 200
-      font-family: Helvetica, sans-serif
-
-    h1
-      font-size: 48px
-
     h2
-      font-size: 24px
       margin-bottom: 20px
 
-    h3
-      font-size: 14px
-      margin: 6px 0
-
-      a
-        color: inherit
-        text-decoration: none
-
-        &:hover
-          text-decoration: underline
-
-
-
   .about
-
     p
       margin: 1px -40px
       padding: 5px 40px
 
-    .download-section
-      margin: 40px -40px
-      padding: 10px 42px
-      font-weight: 200
+  .download-section
+    margin: 40px -40px
+    padding: 10px 42px
+
+    .download
+      margin: 20px 0
+
+      &:not(:last-child)
+        margin-bottom: 50px
+
+      .date, .details
+        margin: 8px 0
 
       .download-link
         color: black
-        background: #fbb55b
+        background: #ccc
         text-decoration: none
         display: inline-block
-        padding: 10px 8px 8px 8px
-        margin-right: 10px
+        padding: 10px 14px 8px 14px
+        border-bottom: 3px solid #aaa
+        margin: 0 10px 10px 0
+        border-radius: 4px
 
-        &:hover
-          background: white
+      &.latest
+        .download-link
+          font-size: 140%
+          background: #83C1F1
+          border-bottom-color: #60a3de
+          color: white
 
 
   .thumbs
-    margin: 40px -40px
-    padding: 0 30px
-    background: rgba(0,0,0,0.1)
+    margin: 40px 0 70px
 
     a
       display: inline-block
       line-height: 0
-      margin: 12px
+      margin: 10px 10px 10px 0
+
+      opacity: 0.9
+
+      &:hover
+        opacity: 1
 
 
 .footer
-  text-align: right
+
+  p
+    margin: 10px 0
 
   a
     color: inherit
