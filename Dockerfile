@@ -1,6 +1,14 @@
-FROM octohost/ruby-1.9
+FROM ubuntu:14.04
 
-RUN gem install middleman therubyracer --no-rdoc --no-ri
+RUN echo "deb http://archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
+RUN apt-get update
+RUN apt-get install -y nginx nodejs
+
+RUN \curl -sSL https://get.rvm.io | bash -s stable
+RUN source ~/.rvm/scripts/rvm
+RUN rvm install 2.1.2
+RUN gem update --system
+RUN echo "gem: --no-document" >> ~/.gemrc
 
 RUN gem install bundler
 

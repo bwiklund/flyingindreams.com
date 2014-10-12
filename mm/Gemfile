@@ -1,6 +1,4 @@
 source :rubygems
 
-gem "rb-inotify"
-gem "therubyracer"
 gem "middleman"
 gem "slim"
